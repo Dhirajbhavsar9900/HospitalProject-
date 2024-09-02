@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Soft background color */
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: #006994; /* Dark blue */
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #006994;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navBar ul li {
+    margin: 0 15px;
+}
+
+.navBar ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.navBar ul li a:hover {
+    background-color: #ff6f61; /* Coral color on hover */
+    color: white;
+}
+
+.selectRole {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.selectRole button {
+    padding: 15px 40px;
+    border: 2px solid #ff6f61;
+    border-radius: 25px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.selectRole button:hover {
+    background-color: #fff;
+    color: #ff6f61;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+form {
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+form input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #006994;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .selectRole button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+}
